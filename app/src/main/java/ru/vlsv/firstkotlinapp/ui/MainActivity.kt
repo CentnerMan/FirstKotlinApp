@@ -1,5 +1,6 @@
 package ru.vlsv.firstkotlinapp
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         mainBtn.setOnClickListener {
             mMainTextView.setText(getString(R.string.press_main_btn))
+            it.setBackgroundColor(Color.BLUE)
         }
     }
 }
